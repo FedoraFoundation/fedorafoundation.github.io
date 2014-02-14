@@ -47,12 +47,21 @@
 			<div class="splash">
 				<img src="img/fedoracoin_logo.png">
 				<h1 class="splash-head">FedoraFoundation Donations</h1>
-				<p class="splash-subhead">Current Balances:
-					Advertisement
-					
-					Development
-					
-					Developers
+				<p class="splash-subhead">Current Balances: 
+				<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+ 
+<script>
+$( document ).ready(function() {
+        $.get( "get_balances.php", function( data ) {
+        $( "body" )
+        .append( "Advertising Balance: " + data.adv_balance + "<br />" )                //advertising balance
+                .append( "Developer Balance: " + data.dev_balance + "<br />" )          //developer balance
+                .append( "FedoraFoundation Balance: " + data.fed_balance );     //foundation balance
+        }, "json" );
+});
+ 
+</script>
+				
 				</p>
 				
 			</div>
