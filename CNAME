@@ -1,5 +1,5 @@
 fedora-foundation.net
-dig www.fedora-foundation.com +nostats +nocomments +nocmd
+$ dig www.fedora-foundation.com +nostats +nocomments +nocmd
 # ;www.fedora-foundation.net.                     IN      A
 # www.fedora-foundation.net.              3592    IN      CNAME   fedorafoundation.github.io.
 # fedorafoundation.github.io.           43192   IN      CNAME   github.map.fastly.net.
